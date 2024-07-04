@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Materi Kuliah</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container" data-aos="fade-down" data-aos-duration="1500">
+                <a class="navbar-brand" href="#page-top">Semester 7</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <a class="btn btn-primary btn-sm text-uppercase order-lg-last ms-3" href="index.html#semester">Kembali</a>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#page-top">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Pengertian</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading" data-aos="fade-down" data-aos-duration="1500">Mata Kuliah</div>
+                <div class="masthead-heading text-uppercase" data-aos="zoom-in-up" data-aos-duration="1500">Teknik Kompilasi</div>
+            </div>
+        </header>
+
+        <!-- pengenalan-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up" data-aos-duration="1500">
+                    <h2 class="section-heading text-uppercase">Pengertian</h2>
+                    <h3 class="section-subheading text-muted">Teknik Kompilasi</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image" data-aos="zoom-in" data-aos-duration="1500"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                        <div class="timeline-panel" data-aos="fade-right" data-aos-duration="1500">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">Kegunaan Kompiler</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-start text-muted">Kompiler adalah program yang mengubah kode sumber dari bahasa pemrograman tingkat tinggi ke bahasa mesin atau bahasa lain yang setara yang dapat dieksekusi oleh komputer. Kegunaan utama dari kompiler adalah:
+                                <br>
+                                Penerjemahan Kode
+                                <br>
+                                Optimasi Kode
+                                <br>
+                                Deteksi Kesalahan
+                                <br>
+                                Menghasilkan Kode Eksekusi
+                                <br>
+                                Portabilitas
+                            </p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image" data-aos="zoom-in" data-aos-duration="1500">
+                            <h4>
+                                Mari Lanjut
+                                <br />
+                                Menjelajahi!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- lanjutan -->
+        <section class="page-section" id="pendahuluan" style="position: relative; overflow: hidden;">
+            <di class="container">
+                <div class="text-center" data-aos="fade-up" data-aos-duration="1500">
+                    <h2 class="section-heading text-uppercase">Struktur Kompiler</h2>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4" data-aos="fade-right" data-aos-duration="1500">
+                        <div class="feature-box">
+                        <h4 class="my-3">Compiler</h4>
+                        <p class="text-start">Compiler biasanya terdiri dari beberapa komponen utama yang bekerja sama untuk menerjemahkan dan mengoptimalkan kode sumber. Struktur kompiler dibagi menjadi dua bagian utama: Front-End dan Back-End.
+                        </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="feature-box">
+                        <h4 class="my-3">Front-End</h4>
+                        <p class="text-start">1. Lexical Analysis (Analisis Leksikal)
+                            <br>
+                            Mengubah aliran karakter dari kode sumber menjadi token (unit dasar seperti kata kunci, variabel, operator).
+                            <br>
+                            Alat yang digunakan: Lex.
+                            <br>
+                            2. Syntax Analysis (Analisis Sintaksis) 
+                            <br>
+                            Menguraikan token menjadi struktur sintaksis, seperti pohon parse, untuk memastikan tata bahasa yang benar.
+                            <br>
+                            Alat yang digunakan: Yacc.
+                            <br>
+                            3. Semantic Analysis (Analisis Semantik)
+                            <br>
+                            Memeriksa semantik (arti) kode untuk memastikan tipe data yang benar dan operasi yang valid.
+                            <br>
+                            Melibatkan tabel simbol yang menyimpan informasi tentang variabel, fungsi, dll.
+                        </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-left" data-aos-duration="2000">
+                        <div class="feature-box">
+                        <h4 class="my-3">Back-End</h4>
+                        <p class="text-start">1. Intermediate Code Generation (Pembuatan Kode Perantara)
+                            <br>
+                            Menghasilkan kode perantara yang lebih dekat dengan kode mesin tetapi masih independen dari mesin tertentu.
+                            <br>
+                            2. Code Optimization (Optimasi Kode)
+                            <br>
+                            Memperbaiki kode perantara untuk menjalankan program dengan lebih efisien dan cepat.
+                            <br>
+                            3. Code Generation (Pembuatan Kode)
+                            <br>
+                            Menghasilkan kode mesin yang dapat dieksekusi dari kode perantara.
+                            <br>
+                            4. Code Linking and Assembly (Penghubungan dan Perakitan Kode)
+                            <br>
+                            Menghubungkan kode objek yang dihasilkan dengan pustaka (library) dan menghasilkan program yang dapat dieksekusi.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-duration="1500">
+                    <h2 class="section-heading text-uppercase">Perbedaan Kompiler dan Interpreter</h2>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4" data-aos="fade-right" data-aos-duration="1500">
+                        <div class="feature-box">
+                        <h4 class="my-3">Kompiler</h4>
+                        <p class="text-start">1. Proses Penerjemahan
+                            <br>
+                            Kompiler menganalisis seluruh kode sumber sekaligus dan mengubahnya menjadi kode mesin atau kode objek dalam satu tahap.
+                            <br>
+                            Hasilnya adalah file eksekusi yang dapat dijalankan langsung oleh komputer.
+                            <br>
+                            2. Kecepatan Eksekusi
+                            <br>
+                            Karena kode diterjemahkan seluruhnya sebelum dijalankan, program yang dikompilasi biasanya lebih cepat dalam eksekusi. Kode mesin yang dihasilkan telah dioptimalkan untuk kecepatan.
+                            <br>
+                            3. Deteksi Kesalahan
+                            <br>
+                            Kesalahan dalam kode (seperti kesalahan sintaks atau semantik) ditemukan selama tahap kompilasi sebelum program dijalankan. Program tidak akan dijalankan hingga semua kesalahan diperbaiki.
+                            <br>
+                            4. Contoh
+                            <br>
+                            Kompiler digunakan dalam banyak bahasa pemrograman seperti C, C++, dan Java (Java juga menggunakan interpreter untuk menjalankan bytecode).
+                        </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="feature-box">
+                        <h4 class="my-3">Interpreter</h4>
+                        <p class="text-start">1. Proses Penerjemahan
+                            <br>
+                            Interpreter membaca, menerjemahkan, dan mengeksekusi kode sumber baris per baris. Kode tidak diterjemahkan ke dalam bentuk eksekusi mandiri.
+                            <br>
+                            Interpreter bekerja secara langsung dengan kode sumber selama setiap eksekusi
+                            <br>
+                            2. Kecepatan Eksekusi
+                            <br>
+                            Eksekusi oleh interpreter umumnya lebih lambat dibandingkan dengan kompiler karena setiap baris kode diterjemahkan setiap kali dijalankan. Tidak ada proses optimasi sebelumnya.
+                            <br>
+                            3. Deteksi Kesalahan
+                            <br>
+                            Kesalahan hanya ditemukan ketika baris kode yang bermasalah dijalankan. Program mungkin berjalan sampai bagian yang bermasalah dan kemudian berhenti.
+                            <br>
+                            4. Contoh
+                            <br>
+                            Interpreter digunakan dalam bahasa seperti Python, Ruby, dan JavaScript. Bahasa ini sering digunakan untuk pengembangan cepat dan skrip.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Back to Top Button -->
+        <a id="back-to-top" href="#" class="btn btn-primary btn-sm back-to-top" role="button">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+        
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+
+                <div class="col-lg-4 text-lg-start">&copy; 2024 Created by Gilvan. All right reserved</div>
+
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="https://baak.gunadarma.ac.id" type="_blank" aria-label="Gunadarma">
+                        <img src="assets/img/logo-gundar.jpg" alt="logo universitas gunadarma" class="logo-circle">
+                    </a>
+
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-footer text-decoration-none me-3" href="#!">Privacy Policy</a>
+                    <a class="link-footer text-decoration-none" href="#!">Terms of Use</a>
+                </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
