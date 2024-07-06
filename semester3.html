@@ -19,6 +19,11 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body id="page-top">
+        <!-- Animasi Loading -->
+        <div id="loading-overlay">
+            <div class="spinner"></div>
+        </div>
+
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container" data-aos="fade-down" data-aos-duration="1500">
@@ -27,7 +32,7 @@
                     Menu
                     <i class="fas fa-bars ms-1"></i>
                 </button>
-                <a class="btn btn-primary btn-sm text-uppercase order-lg-last ms-3" href="index.html#semester">Kembali</a>
+                <a class="btn btn-primary btn-sm text-uppercase order-lg-last ms-3 btn-back" href="index.html#semester">Kembali</a>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#page-top">Home</a></li>
@@ -174,6 +179,10 @@
                 </ul>
             </div>
         </section>
+
+        <div class="text-center py-4" id="lanjut">
+            <a class="btn btn-primary btn-xl text-uppercase lanjutBtn" href="semester4.html" data-aos="zoom-in" data-aos-duration="1500">Lanjut ?</a>
+        </div>
         
         <!-- Back to Top Button -->
         <a id="back-to-top" href="#" class="btn btn-primary btn-sm back-to-top" role="button">

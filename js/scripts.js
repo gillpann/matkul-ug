@@ -57,6 +57,7 @@ window.addEventListener('DOMContentLoaded', event => {
 document.addEventListener("DOMContentLoaded", function () {
     const lihatMateriBtns = document.querySelectorAll(".lihatMateriBtn");
     const kembaliBtn = document.querySelector(".btn-back");
+    const lanjutBtn = document.querySelector(".lanjutBtn");
     const loadingOverlay = document.getElementById("loading-overlay");
 
     loadingOverlay.style.display = "block";
@@ -85,6 +86,17 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(function () {
             window.location.href = kembaliBtn.getAttribute("href");
         }, 1000);
+        });
+    }
+
+    if (lanjutBtn) {
+        lanjutBtn.addEventListener("click", function (event) {
+            event.preventDefault(); 
+            loadingOverlay.style.display = "flex"; 
+            
+            setTimeout(function () {
+                window.location.href = lanjutBtn.getAttribute("href");
+            }, 1000); 
         });
     }
 });
